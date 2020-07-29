@@ -1,0 +1,7 @@
+{
+  "name": "Presly",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
