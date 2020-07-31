@@ -32,6 +32,7 @@ export class FolderPage implements OnInit {
       event: ev,
       mode: 'ios'
     });
+    console.log(ev);
     return await popover.present();
   }
 
