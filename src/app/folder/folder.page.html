@@ -6,7 +6,7 @@
     <!-- <ion-title>{{ folder }}</ion-title> -->
     <ion-img class="logo ion-text-start " src="./assets/logo.svg"></ion-img>
       <ion-buttons slot="end">
-        <ion-avatar (click)="presentUserPopover($event)" class="user">
+        <ion-avatar (click)="presentUserPopover()" class="user">
           <img class="photo" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" alt="">
         </ion-avatar>
     </ion-buttons>
@@ -16,6 +16,7 @@
 <ion-content [fullscreen]="true">
 
   <ion-slides class="slides" pager="false" [options]="slideOpts">
+
     <ion-slide>
       <ion-grid>
         <ion-row>
@@ -26,7 +27,7 @@
                   <ion-label color="light" class="ion-text-start"><strong class="ion-margin-end">3.730.000 COP <ion-icon name="information-circle"></ion-icon></strong></ion-label>
                 </ion-col>
                 <ion-col class="lightText" size="12">
-                  <ion-label color="secondary"><small class="ion-margin-end">325.000 COP Ganados en intereses</small></ion-label>
+                  <ion-label><small class="ion-margin-end description">325.000 COP Ganados en intereses</small></ion-label>
                 </ion-col>
               </ion-row>
             </ion-grid>
@@ -39,6 +40,55 @@
         </ion-row>
       </ion-grid>
     </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="9">
+            <ion-grid class="ion-no-padding" fixed>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label color="light" class="ion-text-start"><strong class="ion-margin-end">3.730.000 COP <ion-icon name="information-circle"></ion-icon></strong></ion-label>
+                </ion-col>
+                <ion-col class="lightText" size="12">
+                  <ion-label><small class="ion-margin-end description">325.000 COP Ganados en intereses</small></ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col class="callToAcion" size="3">
+            <div class="buttonStadistics">
+              <ion-icon color="light" name="chevron-forward"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="9">
+            <ion-grid class="ion-no-padding" fixed>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-label color="light" class="ion-text-start"><strong class="ion-margin-end">3.730.000 COP <ion-icon name="information-circle"></ion-icon></strong></ion-label>
+                </ion-col>
+                <ion-col class="lightText" size="12">
+                  <ion-label><small class="ion-margin-end description">325.000 COP Ganados en intereses</small></ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col class="callToAcion" size="3">
+            <div class="buttonStadistics">
+              <ion-icon color="light" name="chevron-forward"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+
   </ion-slides>
 
   <ion-searchbar mode="ios"></ion-searchbar>
@@ -100,7 +150,7 @@
   </ion-list>
   
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab mode="ios" vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button class="ion-margin">
       <ion-icon name="person-add-sharp"></ion-icon>
     </ion-fab-button>

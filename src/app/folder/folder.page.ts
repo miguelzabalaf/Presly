@@ -12,12 +12,20 @@ export class FolderPage implements OnInit {
   public folder: string;
 
   slideOpts = {
+    centeredSlides: true,
+    loop: false,
+    spaceBetween: 0,
+    slidesPerView: 1.1,
     initialSlide: 1,
-    speed: 400,
-    slidesPerView: 1,
-    watchSlidesProgress: true,
   };
-
+    // slidesOptions = {
+    //   initialSlide: 0,
+    //   direction: 'horizontal',
+    //   speed: 300,
+    //   spaceBetween: 8,
+    //   freeMode: true,
+    //   loop: true
+    // };
   constructor( private activatedRoute: ActivatedRoute,
                public popoverCtrl: PopoverController ) { }
 
