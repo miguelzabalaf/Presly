@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UserPopoverComponent } from './user-popover/user-popover.component';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -9,10 +8,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    UserPopoverComponent
+    // UserPopoverComponent
   ],
   exports: [
-    UserPopoverComponent
+    // UserPopoverComponent
   ],
   imports: [
     CommonModule,

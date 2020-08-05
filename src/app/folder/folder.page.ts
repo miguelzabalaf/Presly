@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PopoverController } from '@ionic/angular';
-import { UserPopoverComponent } from '../components/user-popover/user-popover.component';
 
 @Component({
   selector: 'app-folder',
@@ -26,22 +25,10 @@ export class FolderPage implements OnInit {
     //   freeMode: true,
     //   loop: true
     // };
-  constructor( private activatedRoute: ActivatedRoute,
-               public popoverCtrl: PopoverController ) { }
+  constructor( private activatedRoute: ActivatedRoute ) { }
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
-  }
-
-  async presentUserPopover(ev: any) {
-    const popover = await this.popoverCtrl.create({
-      component: UserPopoverComponent,
-      cssClass: 'userPopover',
-      event: ev,
-      mode: 'ios'
-    });
-    console.log(ev);
-    return await popover.present();
   }
 
 }
