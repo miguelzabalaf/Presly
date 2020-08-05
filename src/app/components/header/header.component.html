@@ -1,0 +1,16 @@
+<ion-header mode="ios" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button mode="md" color="primary"></ion-menu-button>
+    </ion-buttons>
+    <ion-title *ngIf="title != 'none'">{{ title }}</ion-title>
+    <ion-img *ngIf="title == 'none'" class="logo ion-text-start"  src="./assets/logo.svg"></ion-img>
+      <ion-buttons slot="end">
+        <ion-button type=button (click)="presentInformationUser()">
+          <ion-avatar  class="user">
+            <img class="photo" src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" alt="">
+          </ion-avatar>
+        </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

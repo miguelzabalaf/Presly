@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { PerfilUserComponent } from './perfil-user/perfil-user.component';
 
 
 
 @NgModule({
   declarations: [
-    // UserPopoverComponent
+    HeaderComponent,
+    PerfilUserComponent,
   ],
   exports: [
-    // UserPopoverComponent
+    HeaderComponent,
+    PerfilUserComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,36 @@
+.content {
+  border: 3px solid red;
+  width: 100%;
+  height: 100%;
+}
+
+.user {
+
+  &Photo {
+    border-radius: 1000px;
+    margin: 5vw 35vw 0vw;
+  }
+
+  &TakePhoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+
+    .icon {
+      padding: 5px;
+      background-color: var(--ion-color-primary);
+      border-radius: 100px;
+      width: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      ion-icon {
+        color: var(--ion-color-primary-contrast);
+        font-size: 20px;
+      }
+    }
+
+  }
+}

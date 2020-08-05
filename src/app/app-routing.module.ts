@@ -8,8 +8,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: ':id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'outbox',
+    loadChildren: () => import('./pages/outbox/outbox.module').then( m => m.OutboxPageModule)
   }
 ];
 
